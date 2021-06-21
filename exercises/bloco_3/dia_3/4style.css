@@ -1,0 +1,37 @@
+div:nth-of-type(1):hover{
+    border: solid red 2px;
+}
+div:nth-of-type(2):hover{
+    border: solid green 2px;
+}
+div:nth-of-type(3):hover{
+    border: solid blue 2px;
+}
+div:nth-of-type(4):hover{
+    border: solid black 2px;
+}
+div:nth-of-type(5):hover{
+    border: solid yellow 2px;
+}
+div:nth-of-type(1) h3{
+    color: green;
+    font-style: italic;
+}
+div:nth-of-type(2) h3{
+    color: blue;
+}
+div:nth-of-type(3){
+    padding: 15px 0 15px 0;
+}
+div:nth-of-type(3) h3{
+    color: black;
+    font-style: italic;
+    font-size: 25px;
+}
+div:nth-of-type(4) h3{
+    color: yellow;
+}
+div:nth-of-type(5) h3{
+    color: red;
+    font-style: italic;
+}
