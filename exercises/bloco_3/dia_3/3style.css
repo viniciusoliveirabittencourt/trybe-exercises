@@ -1,0 +1,16 @@
+h1, p, li{
+    text-align: center;
+}
+li{
+    transition: 1s;
+}
+li:hover{
+    background-color: black;
+    color: white;
+}
+li:active{
+    font-family: 'Lato', sans-serif;
+}
+ol, ul{
+    list-style: none;
+}
