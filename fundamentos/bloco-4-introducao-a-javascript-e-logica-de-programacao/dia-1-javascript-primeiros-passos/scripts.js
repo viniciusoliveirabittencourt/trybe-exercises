@@ -137,4 +137,15 @@ if(doisNum1 > doisNum2){
     console.log(doisNum2);
 }
 
+//3 atividade - 3 programa -------------------------------------------------------------------------------------------
+let tresNum1 = 27;
+let tresNum2 = 56;
+let tresNum3 = 69;
 
+if(tresNum1 > tresNum2 && tresNum1 >  tresNum3){
+    console.log(tresNum1);
+}else if(tresNum2 > tresNum1 && tresNum2 > tresNum3){
+    console.log(tresNum2);
+}else{
+    console.log(tresNum3);
+}
