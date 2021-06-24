@@ -197,3 +197,24 @@ switch(pecaXadrez){
         console.log("Hozitonais; Apenas uma casa");
         break;
 }
+
+//7 atividade - 7 programa -------------------------------------------------------------------------------------------
+let notaAluno = -42;
+
+if(notaAluno > 100){
+    console.log("Sua nota é invalida");
+}else if(notaAluno < 0){
+    console.log("Sua nota é invalida");
+}else if(notaAluno >= 90){
+    console.log("A");
+}else if(notaAluno >= 80){
+    console.log("B");
+}else if(notaAluno >=  70){
+    console.log("C");
+}else if(notaAluno >= 60){
+    console.log("D");
+}else if(notaAluno >= 50){
+    console.log("E");
+}else if(notaAluno < 50){
+    console.log("F");
+}
