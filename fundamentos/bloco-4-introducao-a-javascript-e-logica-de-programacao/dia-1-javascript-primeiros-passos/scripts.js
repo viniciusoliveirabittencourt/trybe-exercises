@@ -129,10 +129,12 @@ modu = a % b;
 console.log(modu);
 
 //2 atividade - 2 programa ------------------------------------------------------------------------------------------
-let num1 = 3;
-let num2 = 4;
-if(num1 > num2){
-    console.log(num1);
+let doisNum1 = 3;
+let doisNum2 = 4;
+if(doisNum1 > doisNum2){
+    console.log(doisNum1);
 }else{
-    console.log(num2);
+    console.log(doisNum2);
 }
+
+
