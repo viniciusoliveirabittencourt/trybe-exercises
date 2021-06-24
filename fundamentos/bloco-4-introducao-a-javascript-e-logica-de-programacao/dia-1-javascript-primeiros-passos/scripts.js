@@ -36,7 +36,7 @@ sub = a - b;
 console.log(sub);
 
 a = 10;
-b = 8;
+b = 9;
 sub = a - b;
 console.log(sub);
 
@@ -254,4 +254,46 @@ if(valorCusto <= 0 || valorVenda <= 0){
     console.log("Vc está no prejuizo");
 }else{
     console.log(lucro);
+}
+
+//11 atividade - 11 programa -------------------------------------------------------------------------------------------
+let salarioTrabalhador = 3000.00;
+let porcentagemInss;
+let salarioInss;
+let porcentagemIr;
+let salarioFinal;
+
+if(salarioTrabalhador <= 0){
+    console.log("Vá trabalhar seu caba");
+}else if(salarioTrabalhador <= 1556.94){
+    porcentagemInss = (salarioTrabalhador * 8) / 100;
+    salarioInss = salarioTrabalhador - porcentagemInss;
+}else if(salarioTrabalhador <= 2594.92){
+    porcentagemInss = (salarioTrabalhador * 9) / 100;
+    salarioInss = salarioTrabalhador - porcentagemInss;
+}else if(salarioTrabalhador <= 5189.82){
+    porcentagemInss = (salarioTrabalhador * 11) / 100;
+    salarioInss = salarioTrabalhador - porcentagemInss;
+}else{
+    salarioInss = salarioTrabalhador - 570.88;
+}
+
+if(salarioInss <= 1903.98){
+    salarioFinal = salarioInss;
+}else if(salarioInss <= 2826.65){
+    porcentagemIr = ((salarioInss * 7.5) / 100) - 142.80;
+    salarioFinal = salarioInss - porcentagemIr;
+    console.log(salarioFinal);
+}else if(salarioInss <= 3751.05){
+    porcentagemIr = ((salarioInss * 15) / 100) - 354.80;
+    salarioFinal = salarioInss - porcentagemIr;
+    console.log(salarioFinal);
+}else if(salarioInss <= 4664.68){
+    porcentagemIr = ((salarioInss * 22.5) / 100) - 636.13;
+    salarioFinal = salarioInss - porcentagemIr;
+    console.log(salarioFinal);
+}else{
+    porcentagemIr = ((salarioInss * 27.5) / 100) - 869.36;
+    salarioFinal = salarioInss - porcentagemIr;
+    console.log(salarioFinal);
 }
