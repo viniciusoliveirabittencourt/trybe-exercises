@@ -149,3 +149,28 @@ if(tresNum1 > tresNum2 && tresNum1 >  tresNum3){
 }else{
     console.log(tresNum3);
 }
+
+//4 atividade - 4 programa -------------------------------------------------------------------------------------------
+let quatroValor = 0;
+
+if(quatroValor > 0){
+    console.log("Valor é positivo");
+}else if(quatroValor < 0){
+    console.log("Valor é negativo")
+}else{
+    console.log("Zero");
+}
+
+//5 atividade - 5 programa -------------------------------------------------------------------------------------------
+let anguloTriangulo1 = 30;
+let anguloTriangulo2 = 50;
+let anguloTriangulo3 = -80;
+let valorTriangulo = anguloTriangulo1 + anguloTriangulo2 + anguloTriangulo3;
+
+if(anguloTriangulo1 <= 0 || anguloTriangulo2 <= 0 || anguloTriangulo3 <= 0){
+    console.log("Valores invalidos, pf coloque valores acima de 0")
+}else if(valorTriangulo == 180){
+    console.log("Seu triangulo é valido");
+}else{
+    console.log("Seu triangulo n é valido, pf tente dnv!")
+}
