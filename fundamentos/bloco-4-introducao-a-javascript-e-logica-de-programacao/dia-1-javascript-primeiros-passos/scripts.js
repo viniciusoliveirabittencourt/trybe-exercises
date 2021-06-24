@@ -232,8 +232,8 @@ if(ifPar % 2 == 0 ||ifPar2 % 2 == 0 ||ifPar3 % 2 == 0){
 
 //9 atividade - 9 programa -------------------------------------------------------------------------------------------
 ifPar = 9;
-ifPar2 = 5;
-ifPar3 = 529;
+ifPar2 = 8;
+ifPar3 = 524;
 
 if(ifPar % 2 == 1 ||ifPar2 % 2 == 1 ||ifPar3 % 2 == 1){
     console.log(true);
