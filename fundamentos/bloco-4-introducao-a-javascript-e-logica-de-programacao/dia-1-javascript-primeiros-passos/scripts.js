@@ -176,3 +176,24 @@ if(anguloTriangulo1 <= 0 || anguloTriangulo2 <= 0 || anguloTriangulo3 <= 0){
 }
 
 //6 atividade - 6 programa -------------------------------------------------------------------------------------------
+let pecaXadrez = "peao".toLowerCase();
+switch(pecaXadrez){
+    case "bispo":
+        console.log("Diagonais");
+        break;
+    case "rainha":
+        console.log("Diagonais; Verticais; Horizontais");
+        break;
+    case "torre":
+        console.log("Verticais; Horizontais");
+        break;
+    case "cavalo":
+        console.log("Movimentação em L")
+        break;
+    case "rei":
+        console.log("Diagonais; Verticais; Hotizontais; Apenas uma casa");
+        break;
+    case "peao":
+        console.log("Hozitonais; Apenas uma casa");
+        break;
+}
