@@ -118,7 +118,7 @@ b = 5;
 modu = a % b;
 console.log(modu);
 
-a = 24;
+a = 23;
 b = 4;
 modu = a % b;
 console.log(modu);
@@ -127,3 +127,12 @@ a = 8;
 b = 1;
 modu = a % b;
 console.log(modu);
+
+//2 atividade - 2 programa ------------------------------------------------------------------------------------------
+let num1 = 3;
+let num2 = 4;
+if(num1 > num2){
+    console.log(num1);
+}else{
+    console.log(num2);
+}
