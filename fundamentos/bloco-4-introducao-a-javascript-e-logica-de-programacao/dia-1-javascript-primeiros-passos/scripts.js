@@ -240,3 +240,18 @@ if(ifPar % 2 == 1 ||ifPar2 % 2 == 1 ||ifPar3 % 2 == 1){
 }else{
     console.log(false);
 }
+
+//10 atividade - 10 programa -------------------------------------------------------------------------------------------
+let valorCusto = 500;
+let valorVenda  = 100;
+let valorImposto = (valorCusto * 20) / 100;
+let valorCustoTotal = valorCusto + valorImposto;
+let lucro = valorVenda - valorCustoTotal;
+
+if(valorCusto <= 0 || valorVenda <= 0){
+    console.log("Erro, valores igual a 0, coloque valores reais e tente novamente")
+}else if(lucro <= 0){
+    console.log("Vc está no prejuizo");
+}else{
+    console.log(lucro);
+}
