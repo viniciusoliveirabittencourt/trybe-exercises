@@ -174,3 +174,5 @@ if(anguloTriangulo1 <= 0 || anguloTriangulo2 <= 0 || anguloTriangulo3 <= 0){
 }else{
     console.log("Seu triangulo n é valido, pf tente dnv!")
 }
+
+//6 atividade - 6 programa -------------------------------------------------------------------------------------------
