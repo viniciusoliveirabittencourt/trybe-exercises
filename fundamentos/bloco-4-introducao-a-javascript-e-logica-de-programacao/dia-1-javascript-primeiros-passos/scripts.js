@@ -218,3 +218,25 @@ if(notaAluno > 100){
 }else if(notaAluno < 50){
     console.log("F");
 }
+
+//8 atividade - 8 programa -------------------------------------------------------------------------------------------
+let ifPar = 9;
+let ifPar2 = 5;
+let ifPar3 = 529;
+
+if(ifPar % 2 == 0 ||ifPar2 % 2 == 0 ||ifPar3 % 2 == 0){
+    console.log(true);
+}else{
+    console.log(false);
+}
+
+//9 atividade - 9 programa -------------------------------------------------------------------------------------------
+ifPar = 9;
+ifPar2 = 5;
+ifPar3 = 529;
+
+if(ifPar % 2 == 1 ||ifPar2 % 2 == 1 ||ifPar3 % 2 == 1){
+    console.log(true);
+}else{
+    console.log(false);
+}
