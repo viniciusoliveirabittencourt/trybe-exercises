@@ -72,4 +72,12 @@ for (let index = 0; index < numbers.length; index += 1){
 }
 console.log(numMenor);
 
-//atividade 8 ---------------------------------------------------------------------------------------------------------
+//atividade 8 e 9 ---------------------------------------------------------------------------------------------------------
+let vini = [];
+let viniNum = 0;
+
+for (let index = 0; index < 25; index += 1){
+    vini.push(viniNum += 1);
+}
+console.log(vini);
+console.log(viniDivAr);
