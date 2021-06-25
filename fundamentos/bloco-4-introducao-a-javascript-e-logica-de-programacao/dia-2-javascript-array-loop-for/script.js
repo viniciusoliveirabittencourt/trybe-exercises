@@ -31,11 +31,22 @@ if(result > 20){
 
 //atividade 5 -------------------------------------------------------------------------------------------------------
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-
 let numMaior = 0;
+
 for (let index = 0; index < numbers.length; index += 1){
     if(numMaior < numbers[index]){
         numMaior = numbers[index];
     }
 }
 console.log(numMaior);
+
+//ativviddade 6 ------------------------------------------------------------------------------------------------------
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let valorImpar = [];
+
+for (let index = 0; index < numbers.length; index += 1){
+    if(numbers[index] % 2 == 0){
+        valorImpar.push(numbers[index]);
+    }
+}
+console.log(valorImpar);
