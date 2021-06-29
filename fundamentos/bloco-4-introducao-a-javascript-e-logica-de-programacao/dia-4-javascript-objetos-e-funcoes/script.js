@@ -1,15 +1,37 @@
-let player = {
-    name: 'Marta',
-    lastName: 'Silva',
-    age: 34,
-    medals: {
-        golden: 2,
-        silver: 3
+//atividade I--------------------------------------------------------------------------------------------------------------------------------
+let info = {
+    personagem: 'Margarida',
+    origem: 'Pato Donald',
+    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+  };
+
+console.log('Bem-vinda, '+info.personagem);
+
+info['recorrente']  = 'Sim';
+console.log(info);
+
+for (let marg in info){
+    console.log(info[marg]);
+}
+
+let infoPat = {
+    personagem: 'Tio Patinhas',
+    origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
+    nota: 'O último MacPatinhas',
+  };
+
+infoPat['recorrente']  = 'Sim';
+
+let recorrente = '';
+for(let junc in info){
+    for(let index in infoPat){
+        
     }
-};
-
-console.log('A jogadora ' + player.name + ' '+player.lastName +' '+'tem '+player.age+' anos de idade.');
-
-player['basteInTheWorld'] = [2006, 2007, 2008, 2009, 2010, 2018];
-
-console.log('A jogadora '+player.name+' '+player.lastName+' foi eleita a melhor do mundo '+player.basteInTheWorld.length);
+    if(info.recorrente == infoPat.recorrente){
+        delete info.recorrente;
+        delete info.recorrente;
+        recorrente = 'Ambos Recorrentes';
+    }
+    console.log(info[junc]+' e '+infoPat[junc]);
+}
+console.log(recorrente);

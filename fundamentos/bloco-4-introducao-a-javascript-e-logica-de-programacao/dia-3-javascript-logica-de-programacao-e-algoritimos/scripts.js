@@ -27,8 +27,12 @@ let recivespace = "";
 for(let index = 0; index < valor; index += 1){
     recivespace += "#";
 }
+
 for(let secondIndex = 0; secondIndex < valor; secondIndex += 1){
     reciveasteric += "*";
+    
+    for(let i = 0; i <= recivespace; i += 1){
+        recivespace += "#";
+    }
     console.log(recivespace + reciveasteric);
-    recivespace = recivespace - "#";
 }
