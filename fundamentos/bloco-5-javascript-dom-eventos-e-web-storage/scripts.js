@@ -1,8 +1,13 @@
-const paragraph = document.getElementById("paragraph");
+const paragraph = document.querySelector("#paragraph");
 paragraph.style.color = "red";
 
-document.getElementById('page-title').innerText = 'Poderoso Chefão';
+document.querySelector('#page-title').innerText = 'Poderoso Chefão';
 
-document.getElementById('second-paragraph').innerText = 'Esse segundo paragrafo tava muito chato';
-document.getElementById('second-paragraph').style.color = 'blue';
-document.getElementById('second-paragraph').style.fontSize = '29px';
+document.querySelector('#second-paragraph').innerText = 'Esse segundo paragrafo tava muito chato';
+document.querySelector('#second-paragraph').style.color = 'blue';
+document.querySelector('#second-paragraph').style.fontSize = '29px';
+
+console.log(document.querySelectorAll('.paragrafo'));
+document.querySelectorAll('.paragrafo')[0].style.color = 'purple';
+
+document.querySelector('h4').style.color = 'orange';
