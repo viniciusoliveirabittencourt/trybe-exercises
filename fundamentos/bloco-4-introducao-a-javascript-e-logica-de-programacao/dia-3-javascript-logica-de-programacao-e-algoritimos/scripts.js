@@ -51,3 +51,25 @@ if (valor % 2 === 0){
         reciveasteric += "**";
     }
 }
+
+//Atividade 5 - Bônus ---------------------------------------------------------------------------------------------------------------------------
+let valor = 27;
+let reciveAsteric = '*';
+let reciveSpace = '';
+let reciveSpaceInt = ' ';
+
+if (valor % 2 === 0){
+    console.log('Pf coloque apenas impares');
+} else {
+    for(let index = 0; index < (valor / 2); index += 1){
+        reciveSpace += ' '
+    }
+    console.log(reciveSpace + reciveAsteric)
+    for(let secondIndex = 0; secondIndex < (valor - 3); secondIndex += 2){
+        reciveSpace = reciveSpace.slice(0, -1);
+        console.log(reciveSpace +'*'+reciveSpaceInt+'*');
+        reciveSpaceInt += '  ';
+        reciveAsteric += "**";
+    }
+    console.log(reciveSpace.slice(0, -1) + (reciveAsteric += '**'));
+}
