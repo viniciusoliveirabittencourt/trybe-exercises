@@ -39,8 +39,8 @@ let valor = 25;
 let reciveasteric = '*';
 let recivespace = '';
 
-if (valor % 2 === 0){
-    console.log('Pf coloque apenas impares');
+if (valor % 2 === 0 && valor <= 1){
+    console.log('Pf coloque apenas impares ou valores a cima de 1');
 } else {
     for(let index = 0; index < (valor / 2); index += 1){
         recivespace += ' '
@@ -53,13 +53,13 @@ if (valor % 2 === 0){
 }
 
 //Atividade 5 - Bônus ---------------------------------------------------------------------------------------------------------------------------
-let valor = 27;
+let valor = 7;
 let reciveAsteric = '*';
 let reciveSpace = '';
 let reciveSpaceInt = ' ';
 
-if (valor % 2 === 0){
-    console.log('Pf coloque apenas impares');
+if (valor % 2 === 0 && valor <= 1){
+    console.log('Pf coloque apenas impares ou valores a cima de 1');
 } else {
     for(let index = 0; index < (valor / 2); index += 1){
         reciveSpace += ' '
@@ -72,4 +72,23 @@ if (valor % 2 === 0){
         reciveAsteric += "**";
     }
     console.log(reciveSpace.slice(0, -1) + (reciveAsteric += '**'));
+}
+
+//Atividade 6 - Bônus ------------------------------------------------------------------------------------------------------------------------------
+let numPrim = 45;
+let quantDeDivi = 0;
+
+if(numPrim <= 0){
+    console.log('Apenas valores a cima de 0 podem ser primos');
+} else {
+    for (let index = 1; index <= numPrim; index += 1){
+        if (numPrim % index === 0){
+            quantDeDivi += 1;
+        }
+    }
+    if(quantDeDivi === 2){
+        console.log('É um numero primo');
+    } else {
+        console.log('Esse numero n é primo');
+    }
 }
