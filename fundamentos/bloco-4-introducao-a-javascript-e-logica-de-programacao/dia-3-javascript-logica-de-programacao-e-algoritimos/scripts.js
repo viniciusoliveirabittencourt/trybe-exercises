@@ -25,14 +25,11 @@ let recivespace = "";
 
 
 for(let index = 0; index < valor; index += 1){
-    recivespace += "#";
+    recivespace += " ";
 }
 
 for(let secondIndex = 0; secondIndex < valor; secondIndex += 1){
     reciveasteric += "*";
-    
-    for(let i = 0; i <= recivespace; i += 1){
-        recivespace += "#";
-    }
+    recivespace = recivespace.slice(0, -1);
     console.log(recivespace + reciveasteric);
 }
