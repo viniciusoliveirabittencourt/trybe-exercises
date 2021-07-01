@@ -1,13 +1,21 @@
-const paragraph = document.querySelector("#paragraph");
-paragraph.style.color = "red";
+document.querySelector('body').style.backgroundColor = '#f3f3f3';
 
-document.querySelector('#page-title').innerText = 'Poderoso Chefão';
+document.querySelector('#header-container').style.backgroundColor = '#65b269';
 
-document.querySelector('#second-paragraph').innerText = 'Esse segundo paragrafo tava muito chato';
-document.querySelector('#second-paragraph').style.color = 'blue';
-document.querySelector('#second-paragraph').style.fontSize = '29px';
+document.querySelector('.emergency-tasks').style.backgroundColor = '#ee9d83';
 
-console.log(document.querySelectorAll('.paragrafo'));
-document.querySelectorAll('.paragrafo')[0].style.color = 'purple';
+let forDesnec = document.querySelectorAll('.emergency-tasks h3');
 
-document.querySelector('h4').style.color = 'orange';
+for (let index = 0; index < forDesnec.length; index += 1){
+    forDesnec[index].style.backgroundColor = '#b076f3';
+}
+
+document.querySelector('.no-emergency-tasks').style.backgroundColor = '#f9db5e';
+
+let forDesnecDois = document.querySelectorAll('.no-emergency-tasks h3');
+
+for (let index = 0; index < forDesnecDois.length; index += 1){
+    forDesnecDois[index].style.backgroundColor = '#232525';
+}
+
+document.querySelector('footer').style.backgroundColor = '#173533';
