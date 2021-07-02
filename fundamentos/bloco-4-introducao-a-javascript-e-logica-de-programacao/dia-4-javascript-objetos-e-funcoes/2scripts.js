@@ -69,4 +69,15 @@ function verificaMenor(arr){
 
     return menorNum;
 }
-console.log(verificaMenor([2, 4, 6, 7, -10, 0, -3]));
+
+function returnShortName(arr){
+    let arrWithNamesLenght = [];
+
+    for (let index = 0; index < arr.length; index += 1){
+        arrWithNamesLenght.push(arr[index].length);
+    }
+
+    return arr[verificaMaior(arrWithNamesLenght)];
+
+}
+
