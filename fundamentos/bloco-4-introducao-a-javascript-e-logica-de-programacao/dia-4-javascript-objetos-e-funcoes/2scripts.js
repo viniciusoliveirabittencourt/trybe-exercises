@@ -27,11 +27,25 @@ function palindromo(string){
     
     return verificaPalindrome;
 }
-console.log(palindromo('puta merda'));
 
 function verificaMaior(arr){
     let maiorNum;
-    for(let index = 0; index < arr; index += 1){
-        
+    for (let index = 0; index < arr.length; index += 1){
+        for(let i = 0; i <= arr.length; i += 1){
+            if (maiorNum > arr[index]){
+
+            }else if (arr[index] > arr[i]){
+                maiorNum = arr[index];
+            }
+        }
     }
+
+    for (let j = 0; j < arr.length; j += 1){
+        if (maiorNum === arr[j]){
+            maiorNum = j;
+        }
+    }
+
+    return maiorNum;
 }
+console.log(verificaMaior([62, 28, 6, 47, 108, 11, 25]));
