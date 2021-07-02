@@ -48,4 +48,25 @@ function verificaMaior(arr){
 
     return maiorNum;
 }
-console.log(verificaMaior([62, 28, 6, 47, 108, 11, 25]));
+
+function verificaMenor(arr){
+    let menorNum;
+    for (let index = 0; index < arr.length; index += 1){
+        for(let i = 0; i <= arr.length; i += 1){
+            if (menorNum < arr[index]){
+
+            }else if (arr[index] < arr[i]){
+                menorNum = arr[index];
+            }
+        }
+    }
+
+    for (let j = 0; j < arr.length; j += 1){
+        if (menorNum === arr[j]){
+            menorNum = j;
+        }
+    }
+
+    return menorNum;
+}
+console.log(verificaMenor([2, 4, 6, 7, -10, 0, -3]));
