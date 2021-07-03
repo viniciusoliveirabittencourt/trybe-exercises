@@ -27,7 +27,7 @@ function palindromo(string){
     
     return verificaPalindrome;
 }
-console.log(palindromo('ara ra'));
+
 function verificaMaior(arr){
     let maiorNum;
     for (let index = 0; index < arr.length; index += 1){
