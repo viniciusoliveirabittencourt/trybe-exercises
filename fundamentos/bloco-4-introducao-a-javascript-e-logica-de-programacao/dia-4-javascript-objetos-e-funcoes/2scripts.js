@@ -1,7 +1,7 @@
 function palindromo(string){
-    let palavraReve = [];
     let valor = 0;
     let verificaPalindrome;
+    let palavraReve = [];
 
     for(let j = (string.length - 1); j > -1; j -= 1){
         palavraReve.push(string[j]);
@@ -21,13 +21,13 @@ function palindromo(string){
 
     for (let second in string){
         if (string[second] == ' '){
-            verificaPalindrome = console.log('Pf use apenas palavras');
+            verificaPalindrome = 'Pf use apenas palavras';
         }
     }
     
     return verificaPalindrome;
 }
-
+console.log(palindromo('ara ra'));
 function verificaMaior(arr){
     let maiorNum;
     for (let index = 0; index < arr.length; index += 1){
@@ -78,6 +78,8 @@ function returnShortName(arr){
     }
 
     return arr[verificaMaior(arrWithNamesLenght)];
-
 }
 
+function returnMoreNumber(arr){
+
+}
