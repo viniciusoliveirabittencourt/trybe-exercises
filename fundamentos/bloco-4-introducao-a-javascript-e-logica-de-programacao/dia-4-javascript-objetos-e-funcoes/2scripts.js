@@ -7,7 +7,7 @@ function revertPalavra(string){
     return palavraReve;
 }
 
-function palindromo(string){
+/* Desafio 1*/ function palindromo(string){
     let valor = 0;
     let verificaPalindrome;
 
@@ -32,8 +32,9 @@ function palindromo(string){
     return verificaPalindrome;
 }
 
-function verificaMaior(arr){
+function salvaMaiorValorArr(arr){
     let maiorNum;
+    
     for (let index = 0; index < arr.length; index += 1){
         for(let i = 0; i <= arr.length; i += 1){
             if (maiorNum > arr[index]){
@@ -44,17 +45,25 @@ function verificaMaior(arr){
         }
     }
 
-    for (let j = 0; j < arr.length; j += 1){
-        if (maiorNum === arr[j]){
-            maiorNum = j;
-        }
-    }
-
     return maiorNum;
 }
 
-function verificaMenor(arr){
+/*Desafio 2*/ function exibeMaiorIndice(arr){
+
+    let exibirMaiorArr;
+
+    for (let j = 0; j < arr.length; j += 1){
+        if (salvaMaiorValorArr(arr) === arr[j]){
+            exibirMaiorArr = j;
+        }
+    }
+
+    return exibirMaiorArr;
+}
+
+function salvaMenorValorArr(arr){
     let menorNum;
+    
     for (let index = 0; index < arr.length; index += 1){
         for(let i = 0; i <= arr.length; i += 1){
             if (menorNum < arr[index]){
@@ -65,25 +74,32 @@ function verificaMenor(arr){
         }
     }
 
-    for (let j = 0; j < arr.length; j += 1){
-        if (menorNum === arr[j]){
-            menorNum = j;
-        }
-    }
-
     return menorNum;
 }
 
-function returnShortName(arr){
+/*Desafio 3 */function exibeMenorIndice(arr){
+
+    let exibirMenorArr;
+
+    for (let j = 0; j < arr.length; j += 1){
+        if (salvaMenorValorArr(arr) === arr[j]){
+            exibirMenorArr = j;
+        }
+    }
+
+    return exibirMenorArr;
+}
+
+/*Desafio 4*/function returnLongestName(arr){
     let arrWithNamesLenght = [];
 
     for (let index = 0; index < arr.length; index += 1){
         arrWithNamesLenght.push(arr[index].length);
     }
 
-    return arr[verificaMaior(arrWithNamesLenght)];
+    return arr[exibeMaiorIndice(arrWithNamesLenght)];
 }
 
-function returnMoreNumber(arr){
-
+/*Desafio 5*/function returnMoreNumber(arr){
+    
 }
