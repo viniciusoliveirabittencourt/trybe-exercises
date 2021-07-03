@@ -101,5 +101,25 @@ function salvaMenorValorArr(arr){
 }
 
 /*Desafio 5*/function returnMoreNumber(arr){
-    
+    let verifiArr = [];
+
+    for (let index = 0; index < arr.length; index += 1){
+        let numComp = 0;
+
+        for(let secondIndex = 0; secondIndex < arr.length; secondIndex += 1){
+            if (arr[index] === arr[secondIndex]){
+                numComp += 1;
+            }
+        }
+        verifiArr.push(numComp);
+    }
+    return arr[exibeMaiorIndice(verifiArr)];
 }
+
+/*Desafio 6*/function somaArray(N){
+    let numSom;
+    for (let index = 0;index < revertPalavra(N).length; index += 1){
+        console.log(arr[index]);
+    }
+}
+console.log(revertPalavra(5));
