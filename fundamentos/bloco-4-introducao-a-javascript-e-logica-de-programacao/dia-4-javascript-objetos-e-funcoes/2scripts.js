@@ -1,14 +1,18 @@
-function palindromo(string){
-    let valor = 0;
-    let verificaPalindrome;
+function revertPalavra(string){
     let palavraReve = [];
 
     for(let j = (string.length - 1); j > -1; j -= 1){
         palavraReve.push(string[j]);
     }
-    
+    return palavraReve;
+}
+
+function palindromo(string){
+    let valor = 0;
+    let verificaPalindrome;
+
     for (let index in string){
-        if (string[index] === palavraReve[index]){
+        if (string[index] === revertPalavra(string)[index]){
             valor += 1;
         }
     }
