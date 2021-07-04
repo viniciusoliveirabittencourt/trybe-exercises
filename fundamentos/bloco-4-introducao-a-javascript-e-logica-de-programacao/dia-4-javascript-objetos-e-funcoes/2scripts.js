@@ -117,9 +117,12 @@ function salvaMenorValorArr(arr){
 }
 
 /*Desafio 6*/function somaArray(N){
-    let numSom;
-    for (let index = 0;index < revertPalavra(N).length; index += 1){
-        console.log(arr[index]);
+    let resultSom = 0;
+
+    for (let index = 0; index <= N; index += 1){
+        resultSom = resultSom + index;
     }
+
+   return resultSom;
 }
-console.log(revertPalavra(5));
+console.log(somaArray(8));
