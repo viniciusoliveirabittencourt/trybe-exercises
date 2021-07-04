@@ -125,4 +125,20 @@ function salvaMenorValorArr(arr){
 
    return resultSom;
 }
-console.log(somaArray(8));
+ /*Desafio 7*/function confereEnd(str1, str2){
+     let verifiIgual = 0;
+
+     for (let index in str2){
+        if (revertPalavra(str1)[index] === revertPalavra(str2)[index]){
+            verifiIgual += 1;
+        }
+    }
+
+    if (verifiIgual === str2.length){
+        verifiIgual = true;
+    } else {
+        verifiIgual = false;
+    }
+
+    return verifiIgual;
+ }
