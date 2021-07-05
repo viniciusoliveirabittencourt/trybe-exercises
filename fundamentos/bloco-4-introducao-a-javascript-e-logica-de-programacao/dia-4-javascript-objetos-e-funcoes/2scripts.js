@@ -142,3 +142,54 @@ function salvaMenorValorArr(arr){
 
     return verifiIgual;
  }
+
+ /*Desafio Bônus 1*/function algarismRoman(str){
+
+    let recebRomanTrans = [];
+
+     for (let index = 0; index < str.length; index += 1){
+        switch(str[index]){
+            case 'I':
+                recebRomanTrans.push(1);
+                break;
+            case 'V':
+                recebRomanTrans.push(5);
+                break;
+            case 'X':
+                recebRomanTrans.push(10);
+                break;
+            case 'L':
+                recebRomanTrans.push(50);
+                break;
+            case 'C':
+                recebRomanTrans.push(100);
+                break;
+            case 'D':
+                recebRomanTrans.push(500);
+                break;
+            case 'M':
+                recebRomanTrans.push(1000);
+                break;
+        }
+     }
+
+    console.log(recebRomanTrans);
+     let numRomNorm = recebRomanTrans[0];
+
+     for (let secondIndex = 0; secondIndex < recebRomanTrans.length; secondIndex += 1){
+        if (recebRomanTrans[secondIndex] == recebRomanTrans[secondIndex - 1]){
+            numRomNorm = numRomNorm + recebRomanTrans[secondIndex];
+        } else if (recebRomanTrans[secondIndex] > recebRomanTrans[secondIndex - 1]){
+            numRomNorm = numRomNorm - recebRomanTrans[secondIndex];
+        } else if (recebRomanTrans[secondIndex] < recebRomanTrans[secondIndex - 1]){
+            numRomNorm = numRomNorm + recebRomanTrans[secondIndex];
+        }
+     }
+     
+     if (numRomNorm <= 0){
+         numRomNorm = numRomNorm * -1;
+     }
+
+     return numRomNorm;
+
+ }
