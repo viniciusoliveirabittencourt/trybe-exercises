@@ -35,6 +35,24 @@ function createDaysOfTheWeek() {
   diasDoMes(dezDaysList);
 
   //Desafio 2 - adicionar via JavaScript um button com determinadas especificações
-  let creatButon = document.createElement('button');
-  creatButon.id = 'btn-holiday';
-  document.querySelector('.buttons-container').appendChild(creatButon);
+  function buttonHoliday(string) {
+    let creatButon = document.createElement('button');
+    creatButon.id = 'btn-holiday';
+    creatButon.innerText = string;
+    document.querySelector('.buttons-container').appendChild(creatButon);
+
+    //Desafio 3 - criar uma função ao botão que altere a cor doa feriados
+    creatButon.addEventListener('click', function(){
+        let changeColor = document.querySelectorAll('.holiday');
+
+        for (let index = 0; index < changeColor.length; index += 1) {
+            if (changeColor[index].style.color.includes('green')) {
+                changeColor[index].style.color = '#777';
+            } else {
+                changeColor[index].style.color = 'green';
+            }
+        }
+    });
+  }
+  buttonHoliday("Feriados");
+
