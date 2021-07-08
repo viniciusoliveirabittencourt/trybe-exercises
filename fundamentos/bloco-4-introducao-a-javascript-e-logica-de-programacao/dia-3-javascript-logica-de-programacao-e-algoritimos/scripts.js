@@ -35,7 +35,7 @@ for(let secondIndex = 0; secondIndex < valor; secondIndex += 1){
 }
 
 //Atividade 4 ----------------------------------------------------------------------------------------------------------------------------------
-let valor = 25;
+let valor = 5;
 let reciveasteric = '*';
 let recivespace = '';
 

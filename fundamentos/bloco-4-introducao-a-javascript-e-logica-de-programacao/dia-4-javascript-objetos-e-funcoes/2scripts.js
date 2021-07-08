@@ -143,7 +143,7 @@ function salvaMenorValorArr(arr){
     return verifiIgual;
  }
 
- /*Desafio Bônus 1*/function algarismRoman(str){
+ /*Desafio Bônus 1function algarismRoman(str){
 
     let recebRomanTrans = [];
 
@@ -193,3 +193,20 @@ function salvaMenorValorArr(arr){
      return numRomNorm;
 
  }
+*/
+
+/*Desafio Bônus 2*/function arrayOfNumber(vector){
+    let numParr  = [];
+
+    for (let i = 0; i < vector.length; i += 1){
+        console.log(vector[i]);
+        for(let j = 0; j < vector; i += 1){
+            console.log(vector[i][j]);
+        }
+    }
+    return numParr;
+}
+
+let vector = [[1, 2], [3,4,5,6], [7,8,9,10]];
+
+console.log(arrayOfNumber(vector));

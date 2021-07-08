@@ -18,4 +18,3 @@ for (let index = 0; index < forDesnecDois.length; index += 1){
     forDesnecDois[index].style.backgroundColor = '#232525';
 }
 
-document.querySelector('footer').style.backgroundColor = '#173533';
