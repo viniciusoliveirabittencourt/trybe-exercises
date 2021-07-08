@@ -56,3 +56,25 @@ function createDaysOfTheWeek() {
   }
   buttonHoliday("Feriados");
 
+    //Desafio 4 - adicionar via JavaScript um button com determinadas especificações
+    function fridayHoliday(string) {
+        let creatButon = document.createElement('button');
+        creatButon.id = 'btn-friday';
+        creatButon.innerText = string;
+        document.querySelector('.buttons-container').appendChild(creatButon);
+    
+        //Desafio 5 - criar uma função ao botão que altere a cor doa feriados
+        creatButon.addEventListener('click', function(){
+            let changeColor = document.querySelectorAll('.friday');
+    
+            for (let index = 0; index < changeColor.length; index += 1) {
+                if (changeColor[index].style.color.includes('purple')) {
+                    changeColor[index].style.color = '#777';
+                } else {
+                    changeColor[index].style.color = 'purple';
+                }
+            }
+        });
+      }
+      fridayHoliday("Sexta");
+
